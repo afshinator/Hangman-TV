@@ -1,16 +1,19 @@
 Hangman TV Game
 ============
 
+##### By: [Afshin Mokhtari](https://github.com/afshinator), Aug 2013
+[Click here](http://) to check it out!
+
+
 There are two distinct parts to this implementation:
 
-* The game itself is written ruby and runs on the command line, however...
-I 'broadcast' the game into the cloud using Firebase.
-You can watch a game being played live from the browser, thats the javascript part;
-You can also watch pre-recorded games that are saved to my Firebase account.
+* The game itself is written ruby and so runs in a ruby interpreter, it can be played all by itself.
+However, I 'broadcast' the game into the cloud using [Firebase](https://www.firebase.com/).
+You can watch a game live or pre-recorded from the browser. ( They are saved to my Firebase account.)
 
 
 * This is a super-sized implmentation of the Hangman exercise from the Odin project:
-Details:  [http://theodinproject.com/](http://www.theodinproject.com/courses/ruby-programming/lessons/files-and-serialization)
+Details:  [TheOdinProject.com](http://www.theodinproject.com/courses/ruby-programming/lessons/files-and-serialization)
 
 ![alt text][logo]
 
@@ -21,17 +24,16 @@ To run my code,
 
  - For the backend (which lets u play & broadcast a live game), you need to run the ruby code...
 
- - you don't need a firebase account yourself, the code uses mine - for now.
- - First the backend instructions : the ruby hangman game generator requires
+ -- you don't need a firebase account yourself, the code uses mine - for now.
+ -- But you need to install the following gem: 
+ ---  BigBertha - [Ruby wrapper for the Firebase backend API](http://derailed.github.io/bigbertha/)
 
- --  BigBertha - [Ruby wrapper for the Firebase backend API](http://derailed.github.io/bigbertha/)
-
-Then after you've pulled down the code, under the game directory, 
-- go in irb:
+ -- After you've pulled down the code, under the game directory, 
+ -- go in irb:
 
 >load "hangman.rb"
 
-then, 
+then to set the game up, 
 >h = Hangman.new({ playerId => "Your Name"});
 
 	#	Here are all the options for .new(): 
@@ -46,10 +48,10 @@ then,
 	#  		:playerId => string 		Name of player (broadcast to frontend)
 
 
-- to start the game and start broadcasting as you play automatically:
+and then to start the game and start broadcasting as you play automatically:
 >h.play
 
 <hr>
 Created by [Afshin Mokhtari](http://www.github.com/afshinator)
 
-[logo]:http://afshinator.tumblr.com/image/67187782110 "Hangman snapshot"
+[logo]:http://24.media.tumblr.com/09ddacd6ec02e06fe5b1e57c5eb379fd/tumblr_mwdlag98LX1sh230co1_1280.jpg "Hangman snapshot"
