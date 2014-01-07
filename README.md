@@ -2,7 +2,7 @@ Hangman TV Game
 ============
 
 ##### By: [Afshin Mokhtari](https://github.com/afshinator), Aug 2013
-[Click here](http://) to check it out!
+[Click here](http://htmlpreview.github.io/?https://github.com/afshinator/Hangman-TV/index.html) to see some pre-recorded games using github preview.
 
 
 There are two distinct parts to this implementation:
@@ -19,14 +19,14 @@ Details:  [TheOdinProject.com](http://www.theodinproject.com/courses/ruby-progra
 
 
 To run my code,
+ - Clone this repo down to your local environment,
 
  - To see a live or pre-recorged game, run the front-end... **pull index.html into your browser**
 
  - For the backend (which lets u play & broadcast a live game), you need to run the ruby code...
 
- -- you don't need a firebase account yourself, the code uses mine - for now.
- You will need to install the following gem: 
- BigBertha - [Ruby wrapper for the Firebase backend API](http://derailed.github.io/bigbertha/)
+ -- You don't need a firebase account yourself, the code uses mine - for now.
+ You will need to install the following gem: <b>BigBertha</b> - [Ruby wrapper for the Firebase backend API](http://derailed.github.io/bigbertha/)
 
  -- After you've pulled down the code, under the game directory, 
  go in irb:
@@ -59,7 +59,7 @@ I was going through the Odin curriculum, this project is part of an exercise in 
 - Javascript, HTML, CSS
 - Firebase API (Both in Ruby and JS ends)
 
-##### TODO:
+###### TODO:
 - The game is pretty robust but there are edge cases I haven't addressed; like if your connection to the net is down, or if there are multiple people broadcasting at the same time.  Also, there is no automatic deletion of old games; another reason to add the ability to use YOUR firebase account instead of mine!
 
 
