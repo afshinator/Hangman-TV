@@ -2,7 +2,7 @@ Hangman TV Game
 ============
 
 ##### By: [Afshin Mokhtari](https://github.com/afshinator), Aug 2013
-[Click here](http://htmlpreview.github.io/?https://github.com/afshinator/Hangman-TV/index.html) to see some pre-recorded games using github preview.
+[Click here](http://htmlpreview.github.io/?https://github.com/afshinator/Hangman-TV/blob/master/index.html) to see some pre-recorded games using github preview.
 
 
 There are two distinct parts to this implementation:
