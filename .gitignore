@@ -1,0 +1,9 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+#
+
+# Ignore all the links and pictures and I put in research folder
+/research
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp

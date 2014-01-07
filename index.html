@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Public Executions - by Afshin Mokhtari</title>
+    <meta charset=utf-8>
+    <meta name="description" content="Watch Hangman games!">
+    <meta name="author" content="Afshin Mokhtari">    
+
+    <link href="css/hangman-tv.css" rel="stylesheet" media="screen">
+    <link href="css/animate-custom.css" rel="stylesheet" media="screen"> 	
+  </head>
+
+<body>
+    <header>
+        <div id="appTitle">
+            <h1>Hangman TV</h1>
+            <h3>Watch your favorite public hanging episodes!</h3>
+        </div>
+    </header>
+
+
+    <div id="announcements" class="pane leftPane">
+        <div id="statusMsg">Initializing rocket science...</div>
+        <div id="rollup"><img src="img/wait.gif"></div>
+    </div>
+
+
+    <div id="menu" class="pane leftPane">
+        <div id="menu-listings">
+        </div>
+    </div>
+
+
+    <div id="stage" class="pane">
+        <div id="text">
+            <p>This lil' applet is the viewer for Hangman games.  It's an exercise in HTML, Javascript with JQuery, and CSS.</p>
+            <p>The game is run and broadcast by a bit of Ruby code running on some machine with a link to the net - perhaps your machine.  Hangman events are broadcast realtime via <a href="https://www.firebase.com/">Firebase</a> API. So cool!</p>
+            <p>You can view past games saved on the cloud by clicking on the left.</p>
+            <p>This is my implementation of <a href="http://www.theodinproject.com/courses/ruby-programming/lessons/file-i-o-and-serialization"  target="_new">Project Hangman - Serialization in Ruby</a> from <em>the Odin Project.</em>  I went a little overboard.</p>
+            <a href="https://github.com/afshinator" target="_new">Source on GitHub</a>
+
+        </div>
+        <div id="base" class="frame"></div>
+        <div id="pole" class="frame"></div>
+        <div id="top" class="frame"></div>
+        <div id="noose" class="frame"></div>     
+        <div id="head" class="frame"></div>
+        <div id="body" class="frame"></div>
+        <div id="l-arm" class="frame"></div>
+        <div id="r-arm" class="frame"></div>
+        <div id="l-leg" class="frame"></div>
+        <div id="r-leg" class="frame"></div>
+    </div>
+
+    <div id="gameStatus" class="pane">
+        <div id="round"></div>
+        <div id="theWord" class="center"></div>
+        <div id="misc" class="center">a bunch of misc text</div>
+        <div id="theGuess" class="center"></div>
+        <button id="button1" type="button">start</button>
+    </div>
+
+
+    <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="app/panes.js"></script>
+    <script src="app/db-utils.js"></script>
+    <script src="app/hangman-tv.js"></script>
+</body>
+
+</html>
