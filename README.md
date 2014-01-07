@@ -25,11 +25,11 @@ To run my code,
  - For the backend (which lets u play & broadcast a live game), you need to run the ruby code...
 
  -- you don't need a firebase account yourself, the code uses mine - for now.
- -- But you need to install the following gem: 
- ---  BigBertha - [Ruby wrapper for the Firebase backend API](http://derailed.github.io/bigbertha/)
+ You will need to install the following gem: 
+ BigBertha - [Ruby wrapper for the Firebase backend API](http://derailed.github.io/bigbertha/)
 
  -- After you've pulled down the code, under the game directory, 
- -- go in irb:
+ go in irb:
 
 >load "hangman.rb"
 
@@ -48,8 +48,20 @@ then to set the game up,
 	#  		:playerId => string 		Name of player (broadcast to frontend)
 
 
-and then to start the game and start broadcasting as you play automatically:
+broadcasting is automatic, now just :
 >h.play
+
+#### Purpose:
+I was going through the Odin curriculum, this project is part of an exercise in working with files and serializing data in Ruby.  I wanted to add a little spice and play with the Firebase API at the same time, and so Hangman TV was born.  I had fun making it.  However, my goal was not to really make a full-blown game, there is plenty of room for improvement.
+
+##### Tools:
+- Ruby
+- Javascript, HTML, CSS
+- Firebase API (Both in Ruby and JS ends)
+
+##### TODO:
+- The game is pretty robust but there are edge cases I haven't addressed; like if your connection to the net is down, or if there are multiple people broadcasting at the same time.  Also, there is no automatic deletion of old games; another reason to add the ability to use YOUR firebase account instead of mine!
+
 
 <hr>
 Created by [Afshin Mokhtari](http://www.github.com/afshinator)
